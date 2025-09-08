@@ -12,8 +12,8 @@ Group project for Intro to Game Programming.
 
 
 # CREDITS
-Danni Burky
-Annika Morgan
-Vivian Schmidt
+- Danni Burky
+- Annika Morgan
+- Vivian Schmidt
 
 etc credits if we grab stuff from extra free resources or what not
