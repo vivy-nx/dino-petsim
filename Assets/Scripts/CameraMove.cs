@@ -6,7 +6,8 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
 
-    public float mouseSensitivity = 10f;
+    public float mouseXSensitivity = 100f;
+    public float mouseYSensitivity = 150f;
 
     public Transform playerBody;
 
@@ -26,8 +27,8 @@ public class CameraMove : MonoBehaviour
 
         if (Cursor.lockState == CursorLockMode.Locked)
         {
-            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            float mouseX = Input.GetAxis("Mouse X") * mouseXSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseYSensitivity * Time.deltaTime;
 
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
