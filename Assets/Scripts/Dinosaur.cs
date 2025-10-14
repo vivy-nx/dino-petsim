@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Dinosaur : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class Dinosaur : MonoBehaviour
     public enum behavior
     {
         idle,
-        waiting,
+        looking,
         moving,
         eating,
         emoting,
@@ -38,7 +39,7 @@ public class Dinosaur : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -47,5 +48,27 @@ public class Dinosaur : MonoBehaviour
         age += Time.deltaTime;
         hunger += Time.deltaTime / 20;
 
+        //control what is done every frame when state updates. probably can be broken down into smaller functions as needed but for now it can just be like this
+        switch(behaviorState)
+        {
+            case behavior.idle:
+            
+                break;
+            case behavior.looking:
+
+                break;
+            case behavior.moving:
+                
+                break;
+            case behavior.eating:
+
+                break;
+            case behavior.emoting:
+
+                break;
+            case behavior.sleeping:
+
+                break;
+        }
     }
 }
