@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
+    path: Assets/Scenes/Title.unity
     guid: 58733f695d04ae243968b9477c18e572
+  - enabled: 0
+    path: Assets/Scenes/dinoSim.unity
+    guid: db0a505c5ad5f8a48ac85ddb23d3851e
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 7321d8ba657688747853cb153feb3a6c
   m_configObjects: {}

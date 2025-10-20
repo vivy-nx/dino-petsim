@@ -17,9 +17,16 @@ public class PlayerMove : MonoBehaviour
     public float jumpHeight = 10f;
     bool isGrounded;
 
+    private bool frozen = false; // freeze the character during menu
+
+
     // Update is called once per frame
     void Update()
     {
+        if (frozen) return;
+        
+            
+        
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
@@ -43,5 +50,16 @@ public class PlayerMove : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public void Freeze()
+    {
+        frozen = true;
+        velocity = Vector3.zero; // immediately stop all movement
+    }
+
+    public void Unfreeze()
+    {
+        frozen = false;
     }
 }
