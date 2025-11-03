@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5360557348445099972}
   - component: {fileID: 1489603703898971111}
   - component: {fileID: 4989918606744055772}
+  - component: {fileID: 8694333600274728185}
   m_Layer: 0
   m_Name: dinosaur
   m_TagString: Dinosaur
@@ -104,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c748413912987247aa1b97729e4962f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enteringNewState: 0
   dinoSpecies: 0
   dinoName: Dinosaur
   age: 0
@@ -113,6 +115,29 @@ MonoBehaviour:
   energy: 100
   behaviorState: 0
   behaviorTimer: 0
+  agent: {fileID: 8694333600274728185}
+--- !u!195 &8694333600274728185
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67513023387795111}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &8805748473808868564
 PrefabInstance:
   m_ObjectHideFlags: 0
