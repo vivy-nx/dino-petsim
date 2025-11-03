@@ -422,12 +422,101 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Credits Dino Simulator \nDinosaurs rule\nDinosaurs modeled by Danni Burky\nFree
-    trees 3d low poly models pack by Free Game Assets\nFree stones 3d low poly pack
-    by Free Game Assets\nFree Shrubs Flowers and Mushrooms 3D Low Poly Pack\r \n     
-    by Free Game Assets\nFree elf house low poly pack by Free Game Assets\n\n\n\n\n\nman
-    dinos are so cool\n\nif you're reading this the scrollbar works\n\nwow unity
-    is amazing\n"
+  m_text: '<b>Dino Ranch Credits</b>
+
+    ~~Dinosaurs Rule~~
+
+
+    <b>Programming</b>
+
+    Annika
+    Morgan
+
+    Vivian Schmidt
+
+
+    <b>Menu Design</b>
+
+    Danni Burky
+
+    Annika
+    Morgan
+
+
+    <b>Dinosaur Modelling</b>
+
+    Danni Burky
+
+
+    <b>Terrain Modelling
+    and Texturing</b>
+
+    Vivian Schmidt
+
+
+    <b>Icon Sprites</b>
+
+    Vivian Schmidt
+
+
+    <b>Additional
+    Environment Models by Free Game Assets</b>
+
+    <i>Free trees 3d low poly models
+    pack</i>
+
+    <i>Free stones 3d low poly pack</i>
+
+    <i>Free Shrubs Flowers
+    and Mushrooms 3D Low Poly Pack</i>
+
+    <i>Free elf house low poly pack</i>
+
+
+    <b>Original
+    Concept</b>
+
+    Danni Burky
+
+    Annika Morgan
+
+
+    <b>Special Thanks</b>
+
+    KSU
+    Student Legal Services
+
+    Brackeys
+
+    Lynne Wheatley
+
+
+    <b>Made with</B>
+
+    Unity
+    2022.3.62.f1
+
+    TextMesh Pro
+
+    Blender
+
+    Aseprite
+
+
+    <b>Thanks for
+    playing!</b>
+
+
+    <i>man dinos are so cool
+
+
+    if you''re reading this the
+    scrollbar works
+
+
+    wow unity is amazing
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -461,7 +550,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -490,7 +579,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 20, y: 20, z: 20, w: 20}
+  m_margin: {x: -494.3853, y: 20, z: -508.18542, w: 20}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -908,6 +997,7 @@ GameObject:
   - component: {fileID: 846202555}
   - component: {fileID: 846202554}
   - component: {fileID: 846202553}
+  - component: {fileID: 846202556}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -979,13 +1069,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 846202556}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: TitleScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1029,6 +1119,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846202551}
   m_CullTransparentMesh: 1
+--- !u!114 &846202556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846202551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11b10b5c619b934290fab673b6a4fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMoveScript: {fileID: 0}
 --- !u!1 &980137766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,8 +1536,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 207136733}
   m_HandleRect: {fileID: 207136732}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.49455595
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
