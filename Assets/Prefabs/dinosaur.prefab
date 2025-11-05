@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5360557348445099972}
   - component: {fileID: 1489603703898971111}
   - component: {fileID: 4989918606744055772}
+  - component: {fileID: -3365931936071095870}
   m_Layer: 0
   m_Name: dinosaur
   m_TagString: Dinosaur
@@ -113,6 +114,19 @@ MonoBehaviour:
   energy: 100
   behaviorState: 0
   behaviorTimer: 0
+--- !u!114 &-3365931936071095870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67513023387795111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a16556ec8d7284d8be3f5855e2e56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: 
 --- !u!1001 &8805748473808868564
 PrefabInstance:
   m_ObjectHideFlags: 0
