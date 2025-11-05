@@ -31,11 +31,15 @@ public class SelectionManager : MonoBehaviour
                 interaction_text.text = selectionTransform.GetComponent<InteractableObject>().GetItemName();
                 interactionInfo.SetActive(true);
             }
-            else
+            else  // hit w/o interactable script
             {
                 interactionInfo.SetActive(false);
             }
 
-        }
+        } 
+        else // no hit
+        {
+            interactionInfo.SetActive(false); // makes sure then if we go from obj to sky there is no bug keeping text on
+        }                                     // since sky is not an obj
     }
 }
